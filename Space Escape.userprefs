@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ChangeMovement.cs">
+    <Files>
+      <File FileName="Assets\Script\Player_Controller.cs" Line="99" Column="4" />
+      <File FileName="Assets\Script\Laser_Controler.cs" Line="1" Column="1" />
+      <File FileName="Assets\Enemy_Controller.cs" Line="55" Column="4" />
+      <File FileName="Assets\SpawnerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\MonsterControl.cs" Line="41" Column="39" />
+      <File FileName="Assets\BoostController.cs" Line="1" Column="1" />
+      <File FileName="Assets\BoosterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\ChangeMovement.cs" Line="26" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
