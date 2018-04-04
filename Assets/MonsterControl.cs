@@ -18,14 +18,14 @@ public class MonsterControl : MonoBehaviour {
 	public Slider MonsterDistance;
 	public GameObject Player;
 	public GameObject Monster;
-
-	private Player_Controller playerValues;
+    public GameObject MonsterPoint;
+    private Player_Controller playerValues;
 
 	Rigidbody MonsterRB;
 	// Use this for initialization
 	void Start () {
 		MonsterRB = GetComponent <Rigidbody> ();
-		distanceToPlayer = (Vector3.Distance (Player.transform.position, transform.position)-7);
+		distanceToPlayer = (Vector3.Distance (MonsterPoint.transform.position, transform.position)-7);
 		MaxdistanceToPlayer = distanceToPlayer;
 		playerValues = Player.GetComponent<Player_Controller> ();
 		BoostMode = playerValues.boostMode;
