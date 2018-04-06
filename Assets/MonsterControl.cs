@@ -2,25 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class MonsterControl : MonoBehaviour {
 	public float distanceToPlayer;
 	public float MaxdistanceToPlayer;
-
 	public float moveDir;
 	public float moveSpeed;
 	public float boost;
-
 	public bool BoostMode = false;
 	//public float boosttime;
-
-
 	public Slider MonsterDistance;
 	public GameObject Player;
 	public GameObject Monster;
     public GameObject MonsterPoint;
     private Player_Controller playerValues;
-
 	Rigidbody MonsterRB;
 	// Use this for initialization
 	void Start () {
@@ -29,9 +23,7 @@ public class MonsterControl : MonoBehaviour {
 		MaxdistanceToPlayer = distanceToPlayer;
 		playerValues = Player.GetComponent<Player_Controller> ();
 		BoostMode = playerValues.boostMode;
-
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		BoostMode = playerValues.boostMode;
@@ -49,8 +41,8 @@ public class MonsterControl : MonoBehaviour {
 			}*/
 		}
 		if (distanceToPlayer <= 0) {
+            playerValues.DieScript();
 			Debug.Log ("GameOver");
 		}
-		
 	}
 }
